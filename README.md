@@ -1,4 +1,14 @@
+# dfc_app
+      1.	Eksport zawartości dokumentów
+        •	Pobieranie zawartości odbędzie się na podstawie listy r_object_ids, która umieszczona bedzie w pliku txt. Lokalizacja pliku będzie zdefiniowana w pliku app.properties.
+        •	Pliki będą eksportowane do wyznaczonej lokalizacji, określonej w pliku app.properties
+        •	Aplikacja wspierać będzie export plików docx, xlsx oraz pptx. Należy stworzyć klasę odpowiedzialną za mapowanie typów na rozszerzenia plików
 
+      2.	Export propertiesów dokumentów do pliku Excel
+        •	Pobieranie propertiesów odbędzie się na podstawie listy r_object_ids, która umieszczona bedzie w pliku txt. Lokalizacja pliku będzie zdefiniowana w pliku app.properties (ta sama jak w punkcie 1)
+        •	Plik będzie wyeksportowany do wyznaczonej lokalizacji, określonej w pliku app.properties (ta sama jak w punkcie 1)
+        •	Wyeksportowane mają być wszystkie właściwości które zwraca select * from dm_document
+        •	Nazwa pliku z eksportem powinna być określona w pliku app.properties
 
       3.	Masowe przypisywanie permission seta do dokumentów
         •	Przypisywanie permission seta odbędzie się dla plików określonych na podstawie listy r_object_ids, która umieszczona bedzie w pliku txt. Lokalizacja pliku będzie zdefiniowana w pliku app.properties
@@ -7,7 +17,6 @@
 
         450003e880000101	dm_450003e880000101	dm_450003e880000101	dmadmin
         450003e880000102	dm_450003e880000102	dm_450003e880000102	idm_dev
-
 
       4.	Masowe tworzenie permission setów
         •	Dane do tworzenia permission setów zapisane będą w pliku csv jak na poniższym przykładzie (znak separatora jest dowolny):
@@ -21,21 +30,3 @@
         o	Dozwolone jest nieograniczone użycie zewnętrznych bibliotek. Wszystkie powinny być zaimportowane do projektu w formie archiwów typu JAR.
         o	Wykonane zadanie należy umieścić w dedykowanym publiczym repozytorium w serwisie github i dostarczyć adres tego repozytorium prowadzącemu do dnia 31.08.2019
 
-
-// app.properties   file
-//  MODE - eksport zawartości // eksport porperties // permission set assignments // permission sets creation
-//  objects_list.txt path
-//  export path
-//  properties file name
-//  MODE - eksport zawartości // eksport porperties // permission set assignments // permission sets creation
-
-//        1.	Eksport zawartości dokumentów
-//        •	Pobieranie zawartości odbędzie się na podstawie listy r_object_ids, która umieszczona bedzie w pliku txt. Lokalizacja pliku będzie zdefiniowana w pliku app.properties.
-//        •	Pliki będą eksportowane do wyznaczonej lokalizacji, określonej w pliku app.properties
-//        •	Aplikacja wspierać będzie export plików docx, xlsx oraz pptx. Należy stworzyć klasę odpowiedzialną za mapowanie typów na rozszerzenia plików
-
-      2.	Export propertiesów dokumentów do pliku Excel
-        •	Pobieranie propertiesów odbędzie się na podstawie listy r_object_ids, która umieszczona bedzie w pliku txt. Lokalizacja pliku będzie zdefiniowana w pliku app.properties (ta sama jak w punkcie 1)
-        •	Plik będzie wyeksportowany do wyznaczonej lokalizacji, określonej w pliku app.properties (ta sama jak w punkcie 1)
-        •	Wyeksportowane mają być wszystkie właściwości które zwraca select * from dm_document
-        •	Nazwa pliku z eksportem powinna być określona w pliku app.properties
