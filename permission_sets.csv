@@ -1,0 +1,4 @@
+acl_auto_001;api_generated_acl;dmadmin;dmadmin;7;execute_proc,change_permit
+acl_auto_002;api_generated_acl;dmadmin;dmadmin;7;execute_proc,change_permit
+acl_auto_003;api_generated_acl;dmadmin;dmadmin;7;execute_proc,change_permit
+acl_auto_004;api_generated_acl;dmadmin;dmadmin;7;execute_proc,change_permit
